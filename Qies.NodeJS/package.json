@@ -1,5 +1,5 @@
 {
-  "name": "qies.nodejs",
+  "name": "qies-nodejs",
   "version": "0.0.0",
   "description": "QiES NodeJS Client",
   "main": "app.js",
