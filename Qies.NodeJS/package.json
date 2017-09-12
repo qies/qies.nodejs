@@ -1,7 +1,7 @@
 {
-  "name": "qies.client.node",
+  "name": "qies.nodejs",
   "version": "0.0.0",
-  "description": "Qies.Client.Node",
+  "description": "QiES NodeJS Client",
   "main": "app.js",
   "author": {
     "name": "mala"
