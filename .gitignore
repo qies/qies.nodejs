@@ -288,6 +288,8 @@ __pycache__/
 *.xsd.cs
 
 # Node/typescript
-dist/**/*.*
-/**/*.js
-/**/*.map.js
+/**/dist/**/*.*
+**/src/**/*.js
+**/src/**/*.map.js
+**/test/**/*.js
+**/test/**/*.map.js
