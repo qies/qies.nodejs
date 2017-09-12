@@ -289,6 +289,7 @@ __pycache__/
 
 # Node/typescript
 /**/dist/**/*.*
+/**/dist/*.*
 **/src/**/*.js
 **/src/**/*.map.js
 **/test/**/*.js
