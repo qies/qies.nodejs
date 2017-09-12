@@ -1,8 +1,8 @@
 echo Building..
 cd Qies.NodeJS
-npm install
-gulp clean
-gulp restore-modules
-gulp typescript-compile
+call npm install
+call gulp clean
+call gulp restore-modules
+call gulp typescript-compile
 
 npm publish dist
