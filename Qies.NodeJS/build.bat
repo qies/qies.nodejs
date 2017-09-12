@@ -1,4 +1,5 @@
 echo Building..
+cd Qies.NodeJS
 npm install
 gulp clean
 gulp restore-modules
