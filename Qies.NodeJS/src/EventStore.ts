@@ -82,7 +82,6 @@ export class EventStore implements IEventStore {
         try {
             do {
                 var response = await this.dynamodb.query(params).promise();
-                console.log(response.Items.length);
                 response.Items.forEach((item) => {
                     var eventType = item["EventType"].S;
                     var eventData = JSON.parse(item["EventData"].S);

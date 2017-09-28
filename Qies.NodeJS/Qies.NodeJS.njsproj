@@ -52,10 +52,13 @@
     <TypeScriptCompile Include="test\Manual\CustomerCreated.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="test\Manual\CustomerUpdated.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="test\Manual\test.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="test\Manual\Customer.ts">
+    <TypeScriptCompile Include="test\Manual\CustomerAggregate.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>

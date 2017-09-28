@@ -1,6 +1,7 @@
 ﻿import {EventBase} from "./EventBase";
 const uuidv5 = require('uuid/v5');
 var namespace = "a8f10200-afbb-478f-90f1-36fe0d2339cf";
+
 export abstract class AggregateBase {
     private streamId: string;
 
