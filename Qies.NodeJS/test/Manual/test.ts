@@ -1,5 +1,4 @@
 ﻿import * as AWS from "aws-sdk";
-import {EventStore} from "../../src/EventStore";
 import {CustomerAggregate} from "./CustomerAggregate";
 import {CustomerCreated} from "./CustomerCreated";
 import { CustomerUpdated } from "./CustomerUpdated";
@@ -10,7 +9,7 @@ AWS.config.credentials = credentials;
 AWS.config.region = "eu-west-1";
 var dynamodb = new AWS.DynamoDB();
 
-var eventStore = new EventStore("QueueEventStore", dynamodb)
+var eventStore = new Qies.NodeJs.EventStore("QueueEventStore", dynamodb)
     .registerEvent(CustomerCreated.eventType, CustomerCreated)
     .registerEvent(CustomerUpdated.eventType, CustomerUpdated);
 

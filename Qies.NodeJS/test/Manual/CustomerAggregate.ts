@@ -1,9 +1,7 @@
-﻿import {AggregateBase} from "../../src/AggregateBase";
-import * as EventBase from "../../src/EventBase";
-import {CustomerCreated} from "./CustomerCreated";
+﻿import {CustomerCreated} from "./CustomerCreated";
 import {CustomerUpdated} from "./CustomerUpdated";
 
-export class CustomerAggregate extends AggregateBase {
+export class CustomerAggregate extends Qies.NodeJs.AggregateBase {
 
     private name: string;
     private birthday: string;
@@ -20,7 +18,7 @@ export class CustomerAggregate extends AggregateBase {
         return this.birthday;
     }
 
-    apply(event: EventBase.EventBase): void {
+    apply(event: Qies.NodeJs.EventBase): void {
         if (event instanceof CustomerCreated) {
             this.name = event.getName();
             this.birthday = event.getBirthday();

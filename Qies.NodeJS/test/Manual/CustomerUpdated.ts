@@ -1,7 +1,6 @@
-﻿import { EventBase } from "../../src/EventBase";
-import { CustomerAggregate } from "./CustomerAggregate";
+﻿import { CustomerAggregate } from "./CustomerAggregate";
 
-export class CustomerUpdated extends EventBase {
+export class CustomerUpdated extends Qies.NodeJs.EventBase {
 
     public static eventType = "CustomerUpdated";
     private name: string;
