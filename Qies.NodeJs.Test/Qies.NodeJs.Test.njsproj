@@ -2,17 +2,16 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>Qies.NodeJs</Name>
-    <RootNamespace>Qies.Client.Node</RootNamespace>
+    <Name>Qies.NodeJs.Test</Name>
+    <RootNamespace>Qies.NodeJs.Test</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>d71cda56-ae7b-41d1-a472-5f852b3cbff7</ProjectGuid>
-    <ProjectHome>
-    </ProjectHome>
-    <StartupFile>test\Manual\test.ts</StartupFile>
+    <ProjectGuid>485dd8d7-0463-4a20-afe2-935a7e55e58d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>test.ts</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -33,27 +32,22 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="build.bat" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tsconfig.json" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="src\AggregateBase.ts" />
-    <TypeScriptCompile Include="src\EventBase.ts" />
-    <TypeScriptCompile Include="src\EventStore.ts">
+    <TypeScriptCompile Include="Code\CustomerAggregate.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\IEventStore.ts" />
-    <TypeScriptCompile Include="src\index.ts">
+    <TypeScriptCompile Include="Code\CustomerCreated.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="Code\CustomerUpdated.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="test.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Gulpfile.js" />
+    <Folder Include="Code\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />

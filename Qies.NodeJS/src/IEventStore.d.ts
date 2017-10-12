@@ -1,6 +1,5 @@
-﻿import {AggregateBase} from "./AggregateBase";
-import {EventBase} from "./EventBase";
-
+import { AggregateBase } from "./AggregateBase";
+import { EventBase } from "./EventBase";
 export interface IEventStore {
     appendStream(aggregate: AggregateBase, event: EventBase): Promise<void>;
     replayStream(aggregate: AggregateBase): Promise<void>;

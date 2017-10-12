@@ -1,0 +1,17 @@
+{
+  "name": "qies.node-js.test",
+  "version": "0.0.0",
+  "description": "Qies.NodeJs.Test",
+  "main": "app.js",
+  "author": {
+    "name": "mala"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.132.0",
+    "qies-nodejs": "file:../Qies.NodeJS/dist",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.34"
+  }
+}

@@ -2,7 +2,7 @@
   "name": "qies-nodejs",
   "version": "0.0.0",
   "description": "QiES NodeJS Client",
-  "main": "app.js",
+  "main": "index.js",
   "author": {
     "name": "mala"
   },
@@ -12,12 +12,14 @@
     "uuid": "^3.1.0"
   },
   "devDependencies": {
+    "@types/node": "^8.0.34",
     "@types/sha1": "^1.1.0",
     "@types/uuid": "^3.4.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-install": "^1.1.0",
     "gulp-typescript": "^3.2.2",
+    "merge2": "^1.2.0",
     "typescript": "^2.5.2"
   }
 }

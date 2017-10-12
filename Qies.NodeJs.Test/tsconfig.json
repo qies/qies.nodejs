@@ -1,7 +1,6 @@
 ﻿{
   "compileOnSave": true,
   "compilerOptions": {
-    "lib": [ "es6" ],
     "module": "commonjs",
     "target": "es6",
     "declaration": true,

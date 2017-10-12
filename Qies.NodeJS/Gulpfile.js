@@ -3,6 +3,7 @@ var gulp = require("gulp");
 var del = require('del');
 var ts = require('gulp-typescript');
 var install = require("gulp-install");
+var merge = require('merge2');
 
 var tsProject = ts.createProject('tsconfig.json', { rootDir: "src" });
 
@@ -16,7 +17,10 @@ gulp.task('typescript-compile', function () {
     var tsResult = tsProject.src()
         .pipe(tsProject());
 
-    return tsResult.js.pipe(gulp.dest('dist'));
+    return merge([
+        tsResult.dts.pipe(gulp.dest('./dist')),
+        tsResult.js.pipe(gulp.dest('./dist'))
+    ]);
 });
 
 gulp.task('restore-modules', function () {
